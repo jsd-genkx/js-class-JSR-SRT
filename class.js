@@ -106,7 +106,6 @@ class DigitalProduct extends Product {
 // ✅ STEP 4: Test your code
 // After you finish implementing, uncomment the code below and run to see if it works.
 
-
 try {
 console.log("=== LandProduct ===");
 	const apple = new LandProduct("Apple", 100, new Date(2025, 6, 1));
@@ -130,7 +129,7 @@ console.log("=== LandProduct ===");
 
 	console.log("\n=== ValidationError test ===");
 	// Uncomment to test:
-	// Product.validateName(""); // should throw ValidationError
+	Product.validateName(""); // should throw ValidationError
 } catch (err) {
 	if (err instanceof ValidationError) {
 		console.error("Validation failed:", err.message);
